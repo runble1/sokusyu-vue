@@ -6,12 +6,9 @@
 </head>
 <body>
   <div id="app">
-    <form>
-      <label for="message">メッセージ：</label><br />
-      <textarea id="message" v-on:keyup.ctrl.exact.72="help" v-model="message"></textarea>
-    </form>
+    <div id="main" v-on:click.right="onclick"></div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-<script src="./event_sys.js"></script>
+<script src="./event_mouse.js"></script>
 </body>
 </html>
