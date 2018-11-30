@@ -4,6 +4,7 @@ new Vue({
     current: new Date().toLocaleString()
   },
   computed: {
+    // 算出プロパティ計算、初回のみ
     randomc: function() {
       return Math.random();
     }
