@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>速習Vue.js</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+  <div id="app">
+    <form>
+      <label for="name">URL : </label>
+      <!-- 3. 検証ルールを適用 -->
+      <input v-validate="'required|url'" data-vv-as="URL" id="url" name="url" />
+    </form>
+    <span v-if="errors.has('url')">{{ errors.first('url') }}</span>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/locale/ja.js"></script>
+  <script src="./plugin.js"></script>
+</body>
+</html>
