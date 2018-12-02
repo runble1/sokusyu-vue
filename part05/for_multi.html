@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>速習Vue.js</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+  <div id="app">
+    <template v-for="a in articles">
+      <header>{{ a.title }}</header>
+      <div>{{ a.description }}</div>
+      <footer>{{ a.author }}著</footer>
+    </template>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="./for_multi.js"></script>
+</body>
+</html>
